@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WORK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+   
+</head>
+    <body>
+        <center>
+   <img style="width: 600px;height: 600px"; src="Screenshot%202024-01-12%20150818.png">
+        </center>
+        <center>
+    
+        <p style="font-style: normal;font-size: 20px;">
+        Global Coverings and All Rules). Two of these methods are global (LEM1 and All Global
+Coverings); the remaining two are local (LEM2 and All Rules).
+Input data file is presented to LERS in the form illustrated in Table 5. In this table,
+the first line (any line does not need to be one physical line—it may contain a few physical
+lines) contains declaration of variables: a stands for an attribute, d for decision, x means
+“ignore this variable.” The list of these symbols starts with “<” and ends with “>”. The
+second line contains declaration of the names of all variables, attributes, and decisions,
+surrounded by brackets. The following lines contain values of all variables.   
+        </p>
+        </center>
+<h1>LEM1—Single Global Covering</h1>
+        <center>
+        <p style="font-style: normal;font-size: 20px;"> In this option, LERS may or may not take into account priorities associated with
+attributes and provided by the user. For example, in a medical domain, some tests
+(attributes) may be dangerous for a patient. Also, some tests may be very expensive,
+while—at the same time—the same decision may be made using less expensive tests.
+LERS computes a single global covering using the following algorithm:</p>
+        </center>
+        <h1>
+     Algorithm SINGLE GLOBAL COVERING
+        </h1>
+        <p><b>Input:</b>A decision table with set A of all attributes and decision d;</p>
+        
+        <p> <b>Output:</b> a single global covering R;</p>
+        
+        <h1>begin</h1>
+        <p>
+            compute partition U/IND(A);</p>
+           <p> P : = A;</p>
+<p>R := Ø;
+        </p>
+        
+        <p style="font-size-adjust: auto;font-style: normal;font-size: 20px;">Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+        
+        <br>
+        
+        <br>
+        <center>
+        <img style="width: 600px;height: 600px;" src="Screenshot%202024-01-12%20154833.png">
+        </center>
+        <p style="font-style: normal;font-size: 20px;">The above algorithm is heuristic, and there is no guarantee that the computed global
+covering is the simplest. However, the problem of looking for all global coverings—in
+order to select the best one—is of exponential complexity in the worst case. LERS
+computes all global coverings in another option, described below. The option of
+computing of all global coverings is feasible for small input data files and when it is
+required to compute as many rules as possible. After computing a single global covering,
+LEM1 computes rules directly from the covering using a technique called dropping
+conditions (i.e., simplifying rules).</p>
+        
+        <p style="font-style: normal;font-size: 20px;">
+        For data from Table 1 (this table is consistent), the rule set computed by LEM1 is
+presented in Figure 3. CLOSE UP THIS SPACE.Note that rules computed by LERS are
+preceded by three numbers: specificity, strength, and the total number of training cases
+matching the left-hand side of the rule. These parameters are defined previously.
+        </p>
+        <br>
+        <p style="font-style: normal;font-size: 20px;">
+        The LEM1 applied to data from Table 2 (this table is inconsistent) computed the rule
+set presented in Figure 4.
+        </p>
+        <center>
+        <img style="width: 600px;height: 600px;" src="Screenshot%202024-01-12%20160328.png">
+        </center>
+    <p style="font-style: normal;font-size: 20px;"> Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.</p>
+        <br>
+        
+        
+        <br>
+        <center>
+        <img style="width: 600px;height: 600px;" src="Screenshot%202024-01-12%20161041.png">
+        </center>
+        <h2>LEM2—Single Local Covering</h2>
+        <p style="font-style: normal;font-size: 20px;">
+        Like in LEM1 (single global covering option of LERS), in the option LEM2 (single
+local covering), the user may take into account attribute priorities. In LEM2 option, LERS
+uses the following algorithm for computing a single local covering:
+
+        </p>
+        <h2><b>Algorithm</b> SINGLE LOCAL COVERING</h2>
+        <h2><b>Input: </b>A decision table with a set A of all attributes and concept B;</h2>
+        <h2><b>Output:</b> A single local covering T of concept B;</h2>
+        <p><b>begin</b></p>
+        <p>G := B;</p>
+        <p>T := Ø;</p>
+        <p><b>while</b> G ‘“ Ø</p>
+        <p><b>begin</b></p>
+        <p>T := Ø;</p>
+        <p>T(G) := {(a, v) | a ∈ A, v is a value of a, [(a, v)] ∩ G ≠ Ø};</p>
+        <p>while T = Ø or [T] ⊄ B</p>
+        
+        <p style="font-style: normal;font-size: 20px;">
+        
+        Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.
+        </p>
+       <br>
+        
+        
+        <br>
+        
+        
+        
+        164 Grzymala-Busse & Ziarko
+        
+        
+      
+        <h4><b>begin</b></h4>
+<p>select a pair (a, v) ∈ T(G) with the highest attribute priority, if a
+tie occurs, select a pair (a, v) ∈ T(G) such that |[(a, v)] ∩ G| is
+maximum; if another tie occurs, select a pair (a, v) ∈ T(G) with
+the smallest cardinality of [(a, v)]; if a further tie occurs, select
+    first pair;</p>
+        <p>T := T ∪ {(a, v)};</p>
+       <p> G := [(a, v)] ∩ G;</p>
+    <p>T(G) := {(a, v) | [(a, v)] ∩ G ≠ Ø};</p>
+        <p>T(G) := T(G) – T;</p>
+        <p> <b>end</b> {while}</p>
+        <p><b>for each</b> (a, v) in T do</p>
+        <p><b>if</b> [T – {(a, v)}] ⊆ B then T := T – {(a, v)};</p>
+        <p><b>T := T</b> ∪ {T};</p>
+        <p>G := B – ∪ [T];</p>
+    <p>T ∈ T</p>
+        <p><b>end</b> {while};</p>
+        <p><b>for </b>each T in T do</p>
+        <p><b>if ∪</b> [S] = B then <b>T := T</b> – {T};</p>
+<p>S ∈ T – {T}</p>
+        <p><b>end</b> {algorithm}.</p>
+        
+        <p  style="font-size: 20px;font-style: normal;">
+        Like the LEM1 option, the above algorithm is heuristic. The choice of used criteria
+was found as a result of many experiments (Grzymala-Busse & Werbrouck, 1998). Rules
+are eventually computed directly from the local covering, no further simplification (as in
+LEM1) is required. For Table 1, LEM2 computed the rule set presented in Figure 5.
+        
+        </p>
+        
+       <h4>All Global Coverings</h4> 
+      <p style="font-size: 20px;font-style: normal;"> The All Global Coverings option of LERS represents a knowledge acquisition
+approach to rule induction. LERS attempts to compute all global coverings, and then all
+minimal rules are computed by dropping conditions. The following algorithm is used:
+        </p>  
+       <center>
+        
+        <img style="width: 600px;height: 600px;" src="Screenshot%202024-01-12%20163820.png">
+        </center> 
+        
+        <p style="font-size: 20px;font-style: normal;">
+        Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.
+        </p>
+        
+        
+        <br>
+        
+        
+        
+        <br>
+        
+        
+        
+                                              Data Mining Based on Rough Sets 165
+        <br>
+        
+        
+        
+        <br>
+
+        <h5>Algorithm ALL GLOBAL COVERINGS</h5>
+        <h5>Input: A decision table with set A of all attributes and decision d;</h5>
+        <h5>Output: the set R of all global coverings of {d};</h5>
+        <b>begin</b>
+        <p>R := Ø;</p>
+        <b>for</b> each attribute a in A <b>do</b>
+        <p>compute partition U/IND({a});</p>
+        <p>k := 1;</p>
+        <p><b>while</b> k ≤ |A| <b>do</b></p>
+        <p><b>begin</b></p>
+        <p><b>for</b> each subset P of the set A with |P| = k do</p>
+        <p> <b>if</b> (P is not a superset of any member of R)</p>
+        <p><b>and</b> (Π U/IND({a}) ≤ U/IND({d})</p>
+<p>a ∈ P</p>
+        <p><b>then</b> add P to R,</p>
+<p>k := k+1</p>
+        <p><b>end</b> {while}</p>
+        <p><b>end</b> {algorithm}.</p>  
+        
+        <center>
+        <img style="width: 600px;height: 600px;" src="Screenshot%202024-01-12%20165522.png">
+        
+        </center>
+        
+        <p style="font-size: 20px;font-style: normal;">
+        Copyright © 2003, Idea Group Inc. Copying or distributing in print or electronic forms without written
+permission of Idea Group Inc. is prohibited.
+        </p>
+        
+        
+        
+        
+    </body>
+</html>
